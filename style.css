@@ -152,8 +152,19 @@ header h1 {
 .special-link {
     border: 2px solid var(--main-blue);
 }
- 
- 
+
+@media (max-width: 480px){
+    .menu {
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        justify-content: center;
+        margin: 0 0 20px 0;
+    }
+    .menu a {
+        text-align: center;
+    }
+}
+
 /* =============================================
    GENERAL SECTIONS
    ============================================= */
